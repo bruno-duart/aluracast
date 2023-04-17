@@ -1,3 +1,8 @@
+@import url("cartao.css");
+@import url("secao.css");
+@import url("menu.css");
+@import url("navbar.css");
+
 body {
     display: grid;
     grid-template-areas: 
@@ -16,44 +21,4 @@ body {
 
 .principal {
     grid-area: main;
-}
-
-.secao-horizontal .cartao {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-}
-
-.cartao__imagem {
-    grid-column: 1/2;
-    grid-row: 1/4;
-}
-
-.cartao__titulo {
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-
-.cartao__subtitulo {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-.cartao__player {
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-
-.cartao__botao {
-    grid-column: 3/4;
-    grid-row: 1/4;
-}
-
-.secao-vertical {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-rows: 1fr 2fr;
-}
-
-.secao-vertical .secao-cartoes {
-    grid-column: 1/3;
 }
